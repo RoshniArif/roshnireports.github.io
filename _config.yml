@@ -1,0 +1,35 @@
+# Site settings
+title: "Roshni Reports"
+description: "Data-driven insights and analytics."
+baseurl: ""  # Leave empty for GitHub Pages root
+url: "https://roshnireports.github.io"
+author: "Roshni Arif"
+
+# Theme setup
+remote_theme: "pages-themes/minimal"  # Choose a GitHub Pages theme
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation Links
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "About"
+    url: "/about/"
+
+# Permalinks
+permalink: /:categories/:title/
+
+# Social Links
+social:
+  github: "https://github.com/RoshniArif"
+  linkedin: "https://www.linkedin.com/in/roshniarif/"
+
+# Timezone
+timezone: America/Los_Angeles

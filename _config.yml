@@ -1,35 +1,27 @@
 # Site settings
 title: "Roshni Reports"
-description: "Data-driven insights and analytics."
-baseurl: ""  # Leave empty for GitHub Pages root
+description: "Data-driven insights and analytics"
+baseurl: ""  # Leave empty for the root
 url: "https://roshnireports.github.io"
 author: "Roshni Arif"
 
-# Theme setup
-remote_theme: "pages-themes/minimal"  # Choose a GitHub Pages theme
+# Use Minimal Mistakes as a remote theme
+remote_theme: "mmistakes/minimal-mistakes"
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate  # If you want pagination for blog posts
 
-# Navigation Links
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "Projects"
-    url: "/projects/"
-  - title: "About"
-    url: "/about/"
-
-# Permalinks
-permalink: /:categories/:title/
-
-# Social Links
+# Optional social links
 social:
-  github: "https://github.com/RoshniArif"
-  linkedin: "https://www.linkedin.com/in/roshniarif/"
+  github: https://github.com/RoshniArif
+  linkedin: https://linkedin.com/in/roshniarif
+
+# Permalinks for posts
+permalink: /:categories/:title/
 
 # Timezone
 timezone: America/Los_Angeles

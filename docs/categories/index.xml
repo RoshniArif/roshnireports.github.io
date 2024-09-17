@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on My New Hugo Site</title>
+    <link>https://roshniarif.github.io/categories/</link>
+    <description>Recent content in Categories on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://roshniarif.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://roshniarif.github.io/categories/ai/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://roshniarif.github.io/categories/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Science</title>
+      <link>https://roshniarif.github.io/categories/data-science/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://roshniarif.github.io/categories/data-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ethics</title>
+      <link>https://roshniarif.github.io/categories/ethics/</link>
+      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://roshniarif.github.io/categories/ethics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Visualization</title>
+      <link>https://roshniarif.github.io/categories/visualization/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://roshniarif.github.io/categories/visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Art</title>
+      <link>https://roshniarif.github.io/categories/art/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://roshniarif.github.io/categories/art/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Storytelling</title>
+      <link>https://roshniarif.github.io/categories/storytelling/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://roshniarif.github.io/categories/storytelling/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

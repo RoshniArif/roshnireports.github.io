@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resumes on My New Hugo Site</title>
+    <link>https://roshniarif.github.io/resume/</link>
+    <description>Recent content in Resumes on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://roshniarif.github.io/resume/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resume</title>
+      <link>https://roshniarif.github.io/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://roshniarif.github.io/resume/</guid>
+      <description>&lt;h2 id=&#34;roshni-arif&#34;&gt;Roshni Arif&lt;/h2&gt;&#xA;&lt;p&gt;San Diego, CA • +1 404-668-7261 • &lt;a href=&#34;mailto:roshni.arif11@gmail.com&#34;&gt;roshni.arif11@gmail.com&lt;/a&gt; • &lt;a href=&#34;https://www.linkedin.com/in/roshniarif&#34;&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;resume.pdf&#34;&gt;Download Resume&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;bridging-data-and-strategy--product-manager-with-a-passion-for-visualization-and-cloud-solutions&#34;&gt;Bridging Data and Strategy | Product Manager with a Passion for Visualization and Cloud Solutions&lt;/h3&gt;&#xA;&lt;h2 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h2&gt;&#xA;&lt;h3 id=&#34;product-manager&#34;&gt;Product Manager&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;AT&amp;amp;T x Tech Mahindra, Plano, TX&lt;/strong&gt; | Jan 2022 – Feb 2024&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developed innovative analytics solutions, improving reporting and dashboard performance using JSON, SOQL, and SAQL.&lt;/li&gt;&#xA;&lt;li&gt;Streamlined data integration using MuleSoft, Kafka, and Snowflake, enhancing system interoperability.&lt;/li&gt;&#xA;&lt;li&gt;Collaborated with stakeholders to translate business needs into technical specifications.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;database-manager&#34;&gt;Database Manager&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;The Atlanta Opera, Atlanta, GA&lt;/strong&gt; | July 2021 – Jan 2022&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

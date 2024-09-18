@@ -1,0 +1,52 @@
+{{ define "main" }}
+<section class="container mx-auto py-16 px-4">
+  <!-- Blog Post Title -->
+  <h1 class="text-5xl font-sawarabi text-ink-red mb-6">{{ .Title }}</h1>
+  
+  <!-- Blog Post Metadata (Date, Categories) -->
+  <div class="text-lg text-ink-gray mb-8">
+    <p>Published on {{ .Date.Format "January 2, 2006" }}</p>
+    
+    {{ with .Params.categories }}
+      <div>
+        <strong>Categories:</strong>
+        {{ range . }}
+          <a href="/categories/{{ . | urlize }}" class="text-ink-blue hover:text-ink-red hover:underline">{{ . }}</a>{{ if not (eq (index . (sub (len .) 1)) ".") }}, {{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+
+  <!-- Blog Post Content -->
+  <article class="prose max-w-none text-ink-black leading-relaxed">
+    {{ .Content }}
+  </article>
+
+  <!-- Tags Section -->
+  {{ with .Params.tags }}
+    <div class="mt-8">
+      <strong class="text-lg text-ink-blue">Tags:</strong>
+      {{ range . }}
+        <a href="/tags/{{ . | urlize }}" class="text-ink-red hover:underline">{{ . }}</a>{{ if not (eq (index . (sub (len .) 1)) ".") }}, {{ end }}
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <!-- References Section -->
+  {{ if .Params.references }}
+    <div class="mt-12">
+      <h3 class="text-2xl font-sawarabi text-ink-blue mb-4">References</h3>
+      <ul class="list-disc list-inside text-ink-black">
+        {{ range .Params.references }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+
+  <!-- Back to Blog Link -->
+  <div class="mt-12">
+    <a href="/blog" class="text-ink-red hover:underline">Back to Blog</a>
+  </div>
+</section>
+{{ end }}

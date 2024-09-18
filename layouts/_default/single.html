@@ -1,0 +1,11 @@
+ <!--Renders a generic page with a title, date, and content. It’s flexible enough to handle any kind of content.-->
+
+{{ define "main" }}
+  <article class="container mx-auto py-16 px-4">
+    <h1 class="text-4xl font-sail text-red-500 mb-6">{{ .Title }}</h1>
+    <div class="text-gray-600 mb-6">{{ .Date }}</div>
+    <div class="content text-lg text-gray-700 leading-relaxed">
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="container mx-auto py-16 px-4">
+  <h1 class="text-4xl font-sawarabi text-center text-ink-red mb-12">Posts in Category: {{ .Title }}</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {{ range .Pages }}
+    <div class="bg-white shadow-lg rounded-lg p-6">
+      <h2 class="text-2xl font-opensans text-ink-blue mb-2">
+        <a href="{{ .Permalink }}" class="hover:text-ink-red">{{ .Title }}</a>
+      </h2>
+      <p class="text-gray-600 mb-4">{{ .Params.summary }}</p>
+      <a href="{{ .Permalink }}" class="text-ink-red hover:underline">Read More</a>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,41 @@
+{{ define "main" }}
+<section class="container mx-auto py-16 px-4">
+  <h1 class="text-4xl font-sawarabi text-center text-ink-red mb-12">My Projects</h1>
+
+  <!-- Grid Layout for Projects -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <!-- Project Card Example -->
+    <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
+      <img src="/images/tech-mahindra-thumbnail.png" alt="Tech Mahindra Data Enablement" class="w-full h-48 object-cover mb-4 rounded-md hover:shadow-md transition duration-300">
+      <h2 class="text-2xl font-opensans text-ink-blue mb-2">Data Enablement at Tech Mahindra</h2>
+      <p class="text-ink-black mb-4">
+        Led a data enablement initiative to enhance CRM data structures and optimize reporting capabilities. The project involved designing a comprehensive data architecture to streamline customer insights and improve decision-making.
+      </p>
+      <a href="/projects/tech-mahindra" class="text-ink-red hover:underline">View Details</a>
+    </div>
+
+    <!-- Add more project cards as needed -->
+    <!-- Project 2 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
+      <img src="/images/synthio-thumbnail.png" alt="Sales Optimization at Synthio" class="w-full h-48 object-cover mb-4 rounded-md hover:shadow-md transition duration-300">
+      <h2 class="text-2xl font-opensans text-ink-blue mb-2">Sales Optimization at Synthio</h2>
+      <p class="text-ink-black mb-4">
+        Developed data-driven solutions to optimize lead generation processes for Synthio’s CRM platform. Improved data accuracy, reporting insights, and overall sales pipeline efficiency.
+      </p>
+      <a href="/projects/synthio" class="text-ink-red hover:underline">View Details</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
+      <img src="/images/censorship-patterns-thumbnail.png" alt="Censorship Patterns" class="w-full h-48 object-cover mb-4 rounded-md hover:shadow-md transition duration-300">
+      <h2 class="text-2xl font-opensans text-ink-blue mb-2">Censorship Patterns Across Decades</h2>
+      <p class="text-ink-black mb-4">
+        A data storytelling project analyzing censorship patterns over time. The project explores the political and social contexts that led to censorship in various regions, providing visual insights using Tableau and SQL.
+      </p>
+      <a href="/projects/censorship-patterns" class="text-ink-red hover:underline">View Details</a>
+    </div>
+
+  </div>
+</section>
+{{ end }}

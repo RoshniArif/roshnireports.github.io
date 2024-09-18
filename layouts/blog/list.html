@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="container mx-auto py-16 px-4">
+  <h1 class="text-4xl font-sawarabi text-center text-ink-red mb-12">Blog</h1>
+
+  <!-- Blog Post List Layout (Horizontal Cards with Circular Thumbnails on the Left) -->
+  <div class="space-y-8">
+    {{ range .Pages }}
+    <div class="flex items-center bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300">
+      
+      <!-- Circular Thumbnail on the left -->
+      <div class="w-32 h-32 mr-8">
+        <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="w-full h-full object-cover rounded-full">
+      </div>
+
+      <!-- Title and Summary on the right -->
+      <div class="flex-1">
+        <h2 class="text-2xl font-sawarabi text-ink-blue mb-2">{{ .Title }}</h2>
+        <p class="text-gray-600 mb-4">{{ .Params.summary }}</p>
+        <a href="{{ .Permalink }}" class="text-ink-red hover:underline">Read More</a>
+      </div>
+      
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

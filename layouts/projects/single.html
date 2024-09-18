@@ -1,0 +1,56 @@
+{{ define "main" }}
+<section class="container mx-auto py-16 px-4">
+  <!-- Project Title and Hero Image -->
+  <h1 class="text-4xl font-sawarabi text-ink-red mb-8">{{ .Title }}</h1>
+  
+  {{ with .Params.thumbnail }}
+    <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-64 object-cover rounded-md mb-8">
+  {{ end }}
+
+  <!-- Project Overview -->
+  <div class="mb-12">
+    <h2 class="text-2xl font-sawarabi text-ink-blue mb-4">Project Overview</h2>
+    <p class="text-ink-black leading-relaxed">{{ .Params.overview }}</p>
+  </div>
+
+  <!-- Tools Used -->
+  <div class="mb-12">
+    <h3 class="text-2xl font-sawarabi text-ink-blue mb-4">Tools and Technologies</h3>
+    <ul class="list-disc list-inside text-ink-black">
+      {{ range .Params.tools }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <!-- Key Insights / Results -->
+  <div class="mb-12">
+    <h3 class="text-2xl font-sawarabi text-ink-blue mb-4">Key Insights</h3>
+    <ul class="list-disc list-inside text-ink-black">
+      {{ range .Params.insights }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <!-- Visualizations -->
+  {{ with .Params.visualization }}
+  <div class="mb-12">
+    <h3 class="text-2xl font-sawarabi text-ink-blue mb-4">Visualizations</h3>
+    <img src="{{ . }}" alt="Project Visualization" class="w-full h-64 object-cover rounded-md mb-4">
+  </div>
+  {{ end }}
+   
+  {{ with .Params.visualization_desc }}
+  <p class="text-ink-black">{{ . }}</p>
+  {{ end }}
+
+  <!-- Navigation Links -->
+  <div class="mt-12 flex justify-between">
+    <a href="/projects" class="text-ink-red hover:underline">Back to Projects</a>
+    {{ with .Next }}
+      <a href="{{ .Permalink }}" class="text-ink-red hover:underline">Next Project</a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

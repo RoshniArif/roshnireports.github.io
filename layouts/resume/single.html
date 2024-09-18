@@ -1,0 +1,92 @@
+{{ define "main" }}
+<section class="container mx-auto py-16 px-4">
+
+  <!-- Name and Contact Info -->
+  <div class="flex justify-between items-center mb-8">
+    <div>
+      <h1 class="text-5xl font-sawarabi text-ink-red mb-2">Roshni Arif</h1>
+      <p class="text-lg font-opensans text-ink-gray">
+        San Diego, CA • +1 404-668-7261 • roshni.arif11@gmail.com • 
+        <a href="https://www.linkedin.com/in/roshniarif" class="text-ink-blue hover:text-ink-red hover:underline">LinkedIn</a>
+      </p>
+    </div>
+
+    <!-- Download Resume Button -->
+    <a href="/resume.pdf" download class="inline-block text-lg font-opensans text-ink-red border-2 border-ink-red hover:bg-ink-red hover:text-white w-16 h-16 flex items-center justify-center rounded-full transition duration-300 ease-in-out transform hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-5-4l-3 3m0 0l-3-3m3 3V4" />
+      </svg>
+    </a>    
+    
+    
+  </div>
+
+  <!-- Headline -->
+  <h2 class="text-2xl font-sawarabi text-ink-blue mb-6">
+    Bridging Data and Strategy | Product Manager with a Passion for Visualization and Cloud Solutions
+  </h2>
+
+  <!-- Work Experience Section -->
+  <div class="mb-12">
+    <h3 class="text-3xl font-sawarabi text-ink-black mb-6 border-b border-dark-gray">Work Experience</h3>
+    
+    <!-- Job 1 -->
+    <div class="mb-8">
+      <h4 class="text-2xl font-sawarabi text-ink-blue">Data Engineer Product Manager</h4>
+      <p class="text-lg font-opensans text-ink-gray">AT&T x Tech Mahindra, Plano, TX | 01/2022 - 02/2024</p>
+      <ul class="list-disc list-inside text-md font-opensans text-ink-black mt-2">
+        <li>Developed innovative analytics solutions, improving reporting and dashboard performance using JSON, SOQL, and SAQL.</li>
+        <li>Streamlined data integration using MuleSoft, Kafka, and Snowflake, enhancing system interoperability.</li>
+        <li>Collaborated with stakeholders to translate business needs into technical specifications.</li>
+      </ul>
+    </div>
+
+    <!-- Job 2 -->
+    <div class="mb-8">
+      <h4 class="text-2xl font-sawarabi text-ink-blue">Database Manager</h4>
+      <p class="text-lg font-opensans text-ink-gray">The Atlanta Opera, Atlanta, GA | 07/2021 - 01/2022</p>
+      <ul class="list-disc list-inside text-md font-opensans text-ink-black mt-2">
+        <li>Led database management and optimization using Tessitura SQL server, ensuring data transparency and improving system performance.</li>
+        <li>Collaborated with marketing teams to optimize CRM systems, boosting campaign efficiency.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="mb-12">
+    <h3 class="text-3xl font-sawarabi text-ink-black mb-6 border-b border-dark-gray">Skills</h3>
+    <ul class="list-disc list-inside text-md font-opensans text-ink-black">
+      <li>Data Management Systems: AWS, Azure, Google BigQuery, Microsoft SQL Server, Snowflake</li>
+      <li>Salesforce Platforms: Data Cloud, Marketing Cloud, Non-Profit Cloud, Sales Cloud</li>
+      <li>Programming: APEX, JavaScript, Python, SQL, REST APIs</li>
+      <li>Data Visualization: Power BI, Tableau, Sisense</li>
+    </ul>
+  </div>
+
+  <!-- Education Section -->
+  <div class="mb-12">
+    <h3 class="text-3xl font-sawarabi text-ink-black mb-6 border-b border-dark-gray">Education</h3>
+
+    <div class="mb-8">
+      <h4 class="text-2xl font-sawarabi text-ink-blue">Harvard University</h4>
+      <p class="text-lg font-opensans text-ink-gray">Certification in Data Analysis in Life Sciences | 08/2020 - 12/2021</p>
+    </div>
+
+    <div class="mb-8">
+      <h4 class="text-2xl font-sawarabi text-ink-blue">Georgia State University</h4>
+      <p class="text-lg font-opensans text-ink-gray">B.B.A. in Computer Information Systems, Minor in Criminal Justice | 12/2016</p>
+    </div>
+  </div>
+
+  <!-- Certifications Section -->
+  <div class="mb-12">
+    <h3 class="text-3xl font-sawarabi text-ink-black mb-6 border-b border-dark-gray">Certifications</h3>
+    <ul class="list-disc list-inside text-md font-opensans text-ink-black">
+      <li>Salesforce Certified Administrator</li>
+      <li>CRM Analytics Data Preparation Specialist (Salesforce)</li>
+      <li>Machine Learning with Python (MIT)</li>
+      <li>PMP Certification Training (Udemy)</li>
+    </ul>
+  </div>
+</section>
+{{ end }}

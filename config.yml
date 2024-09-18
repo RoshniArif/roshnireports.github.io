@@ -1,0 +1,76 @@
+baseURL: "https://your-github-username.github.io/"
+languageCode: "en-us"
+title: "Roshni Reports"
+theme: ""  # Remove if not using a theme
+paginate: 10  # Number of items per page for paginated content
+
+params:
+  description: "Roshni Reports - Data-driven insights and creativity"
+  author: "Roshni Arif"
+  showAuthor: true
+  showDate: true
+
+# Disable specific kinds of content (optional)
+disableKinds:
+  - RSS
+  - sitemap
+
+# Taxonomies for blog tags and categories
+taxonomies:
+  category: "categories"
+  tag: "tags"
+
+# Default metadata for SEO
+params:
+  metaDescription: "Roshni Reports, where data meets creativity."
+  metaKeywords: "Data, Insights, Visualization, Creativity"
+
+# Menu (optional)
+menu:
+  main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 1
+    - identifier: "resume"
+      name: "Resume"
+      url: "/resume"
+      weight: 2
+    - identifier: "projects"
+      name: "Projects"
+      url: "/projects"
+      weight: 3
+    - identifier: "photography"
+      name: "Photography"
+      url: "/photography"
+      weight: 4
+    - identifier: "blog"
+      name: "Blog"
+      url: "/blog"
+      weight: 5
+    - identifier: "contact"
+      name: "Contact"
+      url: "/contact"
+      weight: 6
+
+# Pagination (for blogs or projects if needed)
+paginate: 5
+
+# Output formats (optional)
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+  section: ["HTML"]
+  taxonomy: ["HTML", "RSS"]
+  term: ["HTML", "RSS"]
+
+# Content directory structure
+contentDir: "content"
+layoutDir: "layouts"
+staticDir: "static"
+publishDir: "docs"
+
+# Language settings
+languages:
+  en:
+    weight: 1
+    contentDir: "content/en"

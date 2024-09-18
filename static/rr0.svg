@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Brushstroke Circle -->
+  <path id="brushstroke" 
+        d="M150,250 C150,100 400,100 400,250 C400,400 150,400 150,250 Z" 
+        stroke="black" 
+        stroke-width="10" 
+        fill="none"
+        style="stroke-linecap: round; stroke-linejoin: round;" />
+  
+  <!-- Letters 'RR' -->
+  <text id="logoText" x="160" y="275" font-family="Brush Script MT, cursive" font-size="120" fill="black">
+    RR
+  </text>
+  
+  <!-- Red Accent Circle -->
+  <circle cx="360" cy="180" r="15" fill="red" />
+
+  <!-- Smaller Black Dots -->
+  <circle cx="390" cy="195" r="5" fill="black" />
+  <circle cx="370" cy="220" r="5" fill="black" />
+</svg>

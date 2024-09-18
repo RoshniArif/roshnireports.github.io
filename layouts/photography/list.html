@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="container mx-auto py-16 px-4">
+  <h1 class="text-4xl font-sawarabi text-center text-ink-red mb-12">{{ .Title }}</h1>
+
+  <!-- Photo Gallery Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {{ range .Site.Data.photography }}
+    <div class="group relative">
+      <!-- Generate Image Path using the .image variable -->
+      <img src="/images/photography/{{ .image }}" alt="{{ .title }}" class="w-full h-64 object-cover rounded-lg transition duration-300 group-hover:scale-105">
+      
+      <!-- Overlay for Lightbox Trigger -->
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition duration-300 flex justify-center items-center">
+        <a href="/images/photography/{{ .image }}" class="text-white text-lg hidden group-hover:block" data-lightbox="gallery">View Full Size</a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

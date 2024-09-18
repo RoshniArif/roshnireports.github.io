@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="generator" content="Hugo 0.134.2">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ .Title }} - Roshni Reports</title>
+  <title>Home - Roshni Reports</title>
   
-  <!-- Google Fonts -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Sail&display=swap" rel="stylesheet">
 
 
-  <!-- Anime.js for animations -->
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   
-  <!-- Custom JS for animations -->
+  
   <script src="/js/animations.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <!-- Lightbox CSS -->
+  
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 
-  <!-- Lightbox JS -->
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
 
-  <!-- Tailwind CSS -->
+  
+    <!-- Tailwind CSS -->
   <link rel="stylesheet" href="https://{roshniarif}.github.io/{roshnireports}/css/tailwind.css">
-  <!-- Custom styles (loaded last to ensure it overrides Tailwind if needed) -->
+  
   <link rel="stylesheet" href="https://{roshniarif}.github.io/{roshnireports}/css/style.css">
+
 
 
   
@@ -35,30 +38,30 @@
 
 <body class="bg-gray-100">
   
-  <!-- Enhanced Sticky Header -->
+  
   <header class="sticky top-0 z-50 bg-white shadow-lg py-4">
     <div class="container mx-auto flex items-center justify-between px-4">
       
-      <!-- Site Logo / Title -->
-        <!-- Logo -->
-      <img src="{{ .Site.BaseURL }}images/logo.png" alt="Roshni Reports Logo" class="w-12 h-12 rounded-full object-cover mr-4">
+      
+        
+      <img src="https://{roshniarif}.github.io/{roshnireports}/images/logo.png" alt="Roshni Reports Logo" class="w-12 h-12 rounded-full object-cover mr-4">
 
       <div class="text-3xl font-sawarabi text-ink-blue">
         <a href="/" class="hover:text-ink-red">Roshni Reports</a>
       </div>
       
-      <!-- Navigation Links -->
+      
       <nav class="hidden md:flex space-x-6">
         <a href="/" class="text-gray-700 hover:text-ink-red transition duration-300">Home</a>
         <a href="/resume" class="text-gray-700 hover:text-ink-red transition duration-300">Resume</a>
         <a href="/projects" class="text-gray-700 hover:text-ink-red transition duration-300">Projects</a>
         <a href="/blog" class="text-gray-700 hover:text-red-500">Blog</a>
-        <a href="/photography" class="text-gray-700 hover:text-ink-red transition duration-300">Photography</a> <!-- Add Photography link -->
+        <a href="/photography" class="text-gray-700 hover:text-ink-red transition duration-300">Photography</a> 
         <a href="/contact" class="text-gray-700 hover:text-ink-red transition duration-300">Contact</a>
       </nav>
       
       
-      <!-- Hamburger Menu for Mobile -->
+      
       <div class="md:hidden flex items-center">
         <button id="nav-toggle" class="focus:outline-none">
           <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -68,27 +71,133 @@
       </div>
     </div>
 
-        <!-- Mobile Dropdown Menu -->
+        
     <div id="nav-menu" class="hidden md:hidden bg-white shadow-md mt-2 py-2 space-y-2">
       <a href="/" class="block text-gray-700 hover:text-ink-red px-4 py-2">Home</a>
       <a href="/resume" class="block text-gray-700 hover:text-ink-red px-4 py-2">Resume</a>
       <a href="/projects" class="block text-gray-700 hover:text-ink-red px-4 py-2">Projects</a>
       <a href="/blog" class="block text-gray-700 hover:text-red-500 px-4 py-2">Blog</a>
-      <a href="/photography" class="block text-gray-700 hover:text-ink-red px-4 py-2">Photography</a> <!-- Add Photography link -->
+      <a href="/photography" class="block text-gray-700 hover:text-ink-red px-4 py-2">Photography</a> 
       <a href="/contact" class="block text-gray-700 hover:text-ink-red px-4 py-2">Contact</a>
     </div>
 
   </header>
 
-  <!-- Main content area -->
+  
   <main class="container mx-auto max-w-4xl py-8 px-4">
-    {{ block "main" . }}{{ end }}
+    
+
+<section class="hero bg-ink-black text-center py-20" data-aos="fade-down">
+  <div class="container mx-auto">
+    
+    <h1 class="text-5xl font-sawarabi text-ink-red mb-6" >Welcome to Roshni Reports</h1>
+    <p class="text-xl text-gray-300 font-opensans mb-8">
+      Bridging Data, Art, and Storytelling.
+    </p>
+    <a href="/projects" class="bg-ink-red text-white px-6 py-3 rounded-lg hover:bg-ink-blue transition duration-300">Explore Projects</a>
+    <a href="/resume" class="bg-ink-blue text-white px-6 py-3 ml-4 rounded-lg hover:bg-ink-red transition duration-300">Download Resume</a>
+  </div>
+</section>
+
+
+<section class="about py-16 bg-gray-100" data-aos="fade-left">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-sawarabi text-ink-blue mb-6">About Roshni</h2>
+    <p class="text-lg text-gray-700 font-opensans max-w-2xl mx-auto">
+      Data strategist and visual storyteller with a passion for ink-brush-henna artistry. I bring together technical expertise and creativity to craft unique insights and visuals.
+    </p>
+    <a href="/resume" class="text-ink-red hover:underline mt-4 inline-block">Learn more about me</a>
+  </div>
+</section>
+
+
+<section class="projects bg-white py-16" data-aos="fade-right">
+  <div class="container mx-auto" data-aos="fade-right">
+    <h2 class="text-3xl font-sawarabi text-center text-ink-red mb-12">Highlighted Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <img src="https://{roshniarif}.github.io/{roshnireports}/static/images/synthio-thumbnail.png" alt="Project 1" class="w-full h-48 object-cover rounded-md mb-4">
+        <h3 class="text-2xl font-sans text-gray-800 mb-2">Data Enablement at Tech Mahindra</h3>
+        <p class="text-gray-600">
+          Led a data enablement initiative to enhance CRM data structures and optimize reporting capabilities.
+        </p>
+        <a href="/projects/tech-mahindra" class="text-ink-red hover:underline mt-4 block">View Project</a>
+      </div>
+      
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <img src="/images/censorship-patterns-thumbnail.png" alt="Project 1" class="w-full h-48 object-cover rounded-md mb-4">
+        <h3 class="text-2xl font-sans text-gray-800 mb-2">Censorship Patterns Across Decades</h3>
+        <p class="text-gray-600">
+          This project is a data storytelling analysis of censorship patterns across different decades through banned books.
+        </p>
+        <a href="/projects/censorship-patterns" class="text-ink-red hover:underline mt-4 block">View Project</a>
+      </div>
+
+      
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="blog bg-gray-100 py-16" data-aos="fade-left">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-sawarabi text-ink-blue mb-12">Latest Blog Posts</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <img src="/images/ai.png" alt="Blog 1" class="w-full h-48 object-cover rounded-md mb-4">
+        <h3 class="text-2xl font-sans text-gray-800 mb-2">Future of Data in AI</h3>
+        <p class="text-gray-600">
+          Exploring how data will drive the next generation of AI advancements.
+        </p>
+        <a href="/blog/future-of-data-ai" class="text-ink-red hover:underline mt-4 block">Read More</a>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <img src="/images/storytelling-1.png" alt="Blog 1" class="w-full h-48 object-cover rounded-md mb-4" >
+        <h3 class="text-2xl font-sans text-gray-800 mb-2">Role of Data in Modern Storytelling</h3>
+        <p class="text-gray-600">
+          explores how data-driven storytelling is revolutionizing business industry.
+        </p>
+        <a href="/blog/modern-storytelling" class="text-ink-red hover:underline mt-4 block">Read More</a>
+      </div>
+
+      
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <img src="/images/art-data.png" alt="Blog 1" class="w-full h-48 object-cover rounded-md mb-4" >
+        <h3 class="text-2xl font-sans text-gray-800 mb-2">Role of Data in Modern Storytelling</h3>
+        <p class="text-gray-600">
+          Explores how data-driven art is merging creativity and analysis to create new forms of artistic expression.
+        </p>
+        <a href="/blog/intersection-of-art-and-data" class="text-ink-red hover:underline mt-4 block">Read More</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="photography bg-white py-16" data-aos="fade-up">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-sawarabi text-ink-red mb-12">Photography</h2>
+    <p class="text-lg text-gray-600 font-opensans mb-8 max-w-xl mx-auto">
+      Discover my journey through the lens, where every photograph tells a story. Explore my collection of ink-inspired images.
+    </p>
+    <a href="/photography" class="bg-ink-blue text-white px-6 py-3 rounded-lg hover:bg-ink-red transition duration-300">Explore Photography</a>
+  </div>
+</section>
+
+
+
+
   </main>
 
-  <!-- Footer Section -->
+  
   <footer class="bg-gray-900 py-8 text-gray-300">
     <div class="container mx-auto text-center">
-      <!-- Footer Title -->
+      
       <p class="text-lg font-sans">
         © 2024 Roshni Reports. All Rights Reserved.
       </p>
@@ -96,7 +205,7 @@
         Designed by <a href="https://github.com/RoshniArif" class="text-ink-red hover:underline">Roshni Arif</a>
       </p>
       
-      <!-- Social Media Links -->
+      
       <div class="mt-4 flex justify-center space-x-6">
         <a href="https://www.linkedin.com/in/roshniarif" aria-label="LinkedIn" class="hover:text-ink-red">
           <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -120,7 +229,7 @@
   </footer>
   
 
-  <!-- Mobile Menu Toggle Script -->
+  
   <script>
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
@@ -134,7 +243,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1000, // You can adjust the duration
+    duration: 1000, 
   });
 </script>
 
